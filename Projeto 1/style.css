@@ -1,0 +1,135 @@
+body, html{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo{ 
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px 15px #eeeeee;
+
+}
+
+
+#titulo {
+    text-align: center;
+    width: 500px;
+    background-color: rgb(175, 113, 233);
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.respostas {
+    background-color: beige;
+    border-radius: 10px;
+    height: 350px;
+    padding: 10px;
+    margin: 30px;
+    
+    
+}
+
+li a{
+    display:block;
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 20px 0;
+    margin: 20px 0;
+    font-size: 20px;
+    box-shadow: 5px 5px #d1d1d1;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px 3px #9c9c9c;
+    color: rgb(214, 132, 252);
+    text-decoration: none;
+    
+    
+    
+}
+
+ul{
+    list-style:none;
+    text-align: center;
+    display: block;
+    width: 450px;
+    
+}
+
+a:visited{
+    background-color: rgb(214, 9, 170);
+    color: white;
+}
+
+li a:hover{
+    padding: 30px;
+    background-color:rgb(175, 113, 233);
+    color:white;
+}
+
+
+a:active{
+    color: white;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px 3px #9c9c9c;
+
+}
+
+h2, h3{
+    color: rgb(214, 132, 252);
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px 3px #9c9c9c;
+
+}
+
+h2{
+    display: block;
+    margin-top: 30px ;
+    font-size: 50px;
+
+}
+
+h3{
+    color: red;
+    font-size: 24px;
+}
+
+img{
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.brenda2{
+    width: 300px;
+    height: 200px;
+}
+
+.botao{
+
+    background-color:  rgb(214, 9, 170);
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(214, 132, 252);
+    text-shadow: 1.5px 1.5px 3px #9c9c9c;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.botao:hover{
+    padding: 15px;
+    background-color:rgb(175, 113, 233);
+    color:white;
+}
