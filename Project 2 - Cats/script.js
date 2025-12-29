@@ -9,22 +9,21 @@
 
     let resultado = document.getElementById("resultado");
 
+  
 function calcular(){
-
     let kg = inputKilograma.value;
     let g = inputGramas.value;
     let qtdPD = inputQtdPD.value;
-    
-    let qtdPorDia = ;
-    let qtdSemana =  ;
-    let qtdMes = ;
+
+    let dias = porDia() / kg;
 
 
-    
     resultado.innerHTML = `<p> Você por dia gasta ${porDia()}g de ração</p>`
-    resultado.innerHTML += `<p> Você ainda tem ${((porMes() - kg) / 1000).toFixed(2)}kg no saco de ração </p>`
-   
-}
+    resultado.innerHTML += `<p> Por mês você gasta ${((porMes() - kg) / 1000).toFixed(2)}kg </p>`
+    resultado.innerHTML += `<p> Este saco de ração durará ${ (dias)} dias</p>`
+
+    resultado.innerHTML += ` ${duracao()}` 
+
 
 
 function porDia(pD){
@@ -37,3 +36,17 @@ function porMes(){
         pM =  porDia() * 30;
         return pM;
     }
+
+    
+ function duracao(){
+    if (porMes() <= kg){
+        return `<p> Parabéns, esse controle de ração diária é o ideal! </p>`
+    }
+    else{
+        return `<p> Esta quantidade de ração diária não durará para o mês inteiro, diminua por favor! </p>`
+    }
+}
+
+   
+}
+
